@@ -1,0 +1,10 @@
+c:\users\brad\documents\visual studio 2012\Projects\PJSIP\PJSIP\bin\Debug\PJSIP.exe
+c:\users\brad\documents\visual studio 2012\Projects\PJSIP\PJSIP\bin\Debug\PJSIP.pdb
+c:\users\brad\documents\visual studio 2012\Projects\PJSIP\PJSIP\bin\Debug\PJSIPWrapper.dll
+c:\users\brad\documents\visual studio 2012\Projects\PJSIP\PJSIP\bin\Debug\PJSIPWrapper.pdb
+c:\users\brad\documents\visual studio 2012\Projects\PJSIP\PJSIP\obj\Debug\PJSIP.csprojResolveAssemblyReference.cache
+c:\users\brad\documents\visual studio 2012\Projects\PJSIP\PJSIP\obj\Debug\PJSIP.Form1.resources
+c:\users\brad\documents\visual studio 2012\Projects\PJSIP\PJSIP\obj\Debug\PJSIP.Properties.Resources.resources
+c:\users\brad\documents\visual studio 2012\Projects\PJSIP\PJSIP\obj\Debug\PJSIP.csproj.GenerateResource.Cache
+c:\users\brad\documents\visual studio 2012\Projects\PJSIP\PJSIP\obj\Debug\PJSIP.exe
+c:\users\brad\documents\visual studio 2012\Projects\PJSIP\PJSIP\obj\Debug\PJSIP.pdb

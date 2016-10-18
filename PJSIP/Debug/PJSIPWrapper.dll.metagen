@@ -1,0 +1,102 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly PJSIPWrapper, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class IncomingCallEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 CallID : Public
+    System.String DNIS : Public
+    System.String ANI : Public
+Class DtmfReceivedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 CallID : Public
+    System.String DTMF : Public
+Class CallDisconnectedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 CallID : Public
+Class IncomingCallDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class IncomingCallEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(IncomingCallEventArgs): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(IncomingCallEventArgs, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class CallDisconnectedDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class CallDisconnectedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(CallDisconnectedEventArgs): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(CallDisconnectedEventArgs, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class DtmfReceivedDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, SByte IsSignUnspecifiedByte): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, SByte IsSignUnspecifiedByte, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class DtmfReceivedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(DtmfReceivedEventArgs): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(DtmfReceivedEventArgs, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class PjSipServer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    CallDisconnectedEventHandler CallDisconnected: SpecialName
+    DtmfReceivedEventHandler DtmfReceived: SpecialName
+    IncomingCallEventHandler IncomingCall: SpecialName
+  Methods:
+    add_IncomingCall(IncomingCallEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_IncomingCall(IncomingCallEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_DtmfReceived(DtmfReceivedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_DtmfReceived(DtmfReceivedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CallDisconnected(CallDisconnectedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CallDisconnected(CallDisconnectedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    Start(): PrivateScope, Public, HideBySig
+    Answer(Int32): PrivateScope, Public, HideBySig
+    HangUp(Int32, Int32): PrivateScope, Public, HideBySig
+    PlayPrompt(Int32): PrivateScope, Public, HideBySig
+    MakeCall(Int32): PrivateScope, Public, HideBySig
+    RecordCall(Int32): PrivateScope, Public, HideBySig
+    CheckRecorder(Int32): PrivateScope, Public, HideBySig
+    StopRecording(Int32): PrivateScope, Public, HideBySig
+    CreateConference(Int32): PrivateScope, Public, HideBySig
+    RemoveConference(Int32): PrivateScope, Public, HideBySig
+Class PJSIPWrapper: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    AnswerCall(Int32): PrivateScope, Public, HideBySig
+    HangUp(Int32): PrivateScope, Public, HideBySig
+    PlayPrompt(Int32): PrivateScope, Public, HideBySig
+    Start(): PrivateScope, Public, HideBySig
+    Stop(): PrivateScope, Public, HideBySig
